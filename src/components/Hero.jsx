@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, Typography , Box, Button} from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import heroImage from "./assets/hero.png";
+import heroImage from "../assets1/hero.png";
 import HeroAvatars from "./HeroAvatars";
 
 
