@@ -1,12 +1,28 @@
+import React from "react";
+import {createTheme, ThemeProvider} from "@mui/material";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
-import './App.css';
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Manrope',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+});
 
 function App() {
-  return (
-    <>
-      <h1>welcome to the landing page</h1>
-    </>
-  );
+  return <>
+    <ThemeProvider theme={theme}>
+    <Navbar/>
+      <Hero/>
+    </ThemeProvider>
+  </>;
 }
 
 export default App;
