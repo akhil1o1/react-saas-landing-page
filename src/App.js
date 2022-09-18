@@ -6,6 +6,8 @@ import Hero from "./components/Hero";
 import Businesses from "./components/Businesses";
 import Squares from "./components/Squares";
 import About from "./components/About";
+import Features from "./components/Features";
+import Testimonial from "./components/Testimonial";
 
 const theme = createTheme({
   typography: {
@@ -29,6 +31,8 @@ function App() {
     <Divider orientation="horizontal"/>
     <Squares/>
     <About/>
+    <Features/>
+    <Testimonial/>
     </ThemeProvider>
   </>;
 }

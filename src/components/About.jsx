@@ -29,7 +29,7 @@ const aboutDetails = [
 ]
 
 function About() {
-    return <Box px="100px" py="25px">
+    return <Box px="100px" pt="25px" pb="40px">
         <Typography variant="h3" fontSize="40px" fontWeight="800" width="50%">
         One plateform to increase followers on all social media.
         </Typography>
@@ -41,7 +41,7 @@ function About() {
                         <Typography mb="10px" variant="h6" fontWeight="600">
                             {detail.title}
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography variant="body2" fontWeight="500">
                             {detail.description}
                         </Typography>
                     </Stack>
