@@ -6,7 +6,7 @@ import HeroAvatars from "./HeroAvatars";
 
 
 function Hero() {
-    return <Stack direction={{xs: "column", sm: "row"}} px="7%" pt="20px" pb="40px">
+    return <Stack direction={{xs: "column", sm: "row"}} px="7%" pt="20px" pb="50px">
     <Box flex={0.4} pt="30px">
         <Typography variant="h1" fontWeight="800" fontSize="66px">
         Increase your followers on social media

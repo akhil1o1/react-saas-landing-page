@@ -29,7 +29,7 @@ const aboutDetails = [
 ]
 
 function About() {
-    return <Box px="100px" pt="25px" pb="40px">
+    return <Box px="7%" pt="25px" pb="40px">
         <Typography variant="h3" fontSize="40px" fontWeight="800" width="50%">
         One plateform to increase followers on all social media.
         </Typography>

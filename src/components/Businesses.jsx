@@ -12,7 +12,7 @@ const groupArray = [group1, group2, group3, group4, group5, group6, group7 ];
 
 
 function Businesses() {
-    return <Box textAlign="center" py="50px" px="100px">
+    return <Box textAlign="center" py="50px" px="7%">
     <Typography variant="h6" fontWeight="600" m="auto">
     Trusted By Over 100+ Startups and freelance business
     </Typography>

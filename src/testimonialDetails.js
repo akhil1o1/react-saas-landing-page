@@ -10,7 +10,7 @@ const testimonialDetails = [
 {
     quote : " On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and.",
     personName : "Serhey Hipskyy",
-    designation : "CEO Univarsal",
+    designation : "CEO Universal",
     image : avatar1 
 },
 {

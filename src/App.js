@@ -8,6 +8,8 @@ import Squares from "./components/Squares";
 import About from "./components/About";
 import Features from "./components/Features";
 import Testimonial from "./components/Testimonial";
+import Faqs from "./components/Faqs";
+import Join from "./components/Join";
 
 const theme = createTheme({
   typography: {
@@ -33,6 +35,8 @@ function App() {
     <About/>
     <Features/>
     <Testimonial/>
+    <Faqs/>
+    <Join/>
     </ThemeProvider>
   </>;
 }

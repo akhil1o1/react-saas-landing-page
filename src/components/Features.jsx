@@ -5,7 +5,7 @@ import feature2 from "../assets1/feature2.1.png";
 
 
 function Features() {
-    return <Box px="100px" >
+    return <Box px="7%" >
     {/* section first */}
         <Stack direction="row">
         <Box flex="0.4" pt="15%">

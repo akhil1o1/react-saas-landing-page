@@ -32,7 +32,7 @@ const LeftArrow = () => {
   
 
 function Testimonial() {
-    return <Box px="100px" py="70px" textAlign="center">
+    return <Box px="7.5%" py="70px" textAlign="center">
         <Typography mb="20px" variant="h6" fontSize="18px" fontWeight="800" color="#1976d2">
             TESTIMONIAL
         </Typography>
