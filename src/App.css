@@ -4,7 +4,9 @@ body{
   font-family: 'Manrope', sans-serif;
   color: black;
 }
-
+::-webkit-scrollbar {
+  width: 0px;
+}
 .navbar{
   display: flex;
   flex-direction: row;
@@ -32,4 +34,22 @@ body{
 .feature2-image{
   width: 80%;
   margin-right: 7%;
+}
+.testimonial-card{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.quote-icon-container{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #1976d2;
+  border-radius: 100%;
+}
+.quote-icon{
+  color: #ffffff;
+}
+.star-icon{
+  color: #FE8B75;
 }
