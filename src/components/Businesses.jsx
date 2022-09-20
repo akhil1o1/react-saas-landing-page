@@ -16,7 +16,7 @@ function Businesses() {
     <Typography variant="h6" fontWeight="600" m="auto">
     Trusted By Over 100+ Startups and freelance business
     </Typography>
-    <Stack pt="50px" direction="row" spacing={2} alignItems="center" justifyContent="space-between">
+    <Stack pt="50px" direction={{xs:"column", sm:"column", md:"row"}} spacing={{xs:4, sm:2}} alignItems="center" justifyContent="space-between">
     {
         groupArray.map((image)=> (
             <img className="client-business-logo" src={image} alt="client-business-logos"/>

@@ -12,7 +12,7 @@ import Subscribe from "./components/Subscribe";
 import Footer from "./components/Footer";
 import JoinWaitlist from "./components/JoinWaitlist";
 import Copyright from "./components/Copyright";
-import Topbar from "./components/Topbar";
+import Navbar from "./components/Navbar";
 
 const theme = createTheme({
   typography: {
@@ -29,7 +29,7 @@ const theme = createTheme({
 function App() {
   return <>
     <ThemeProvider theme={theme}>
-    <Topbar/>
+    <Navbar/>
     <Hero/>
     <Divider orientation="horizontal"/>
     <Businesses/>

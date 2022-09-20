@@ -4,12 +4,12 @@ import {Box, Paper, Typography, TextField, Button} from "@mui/material";
 function Subscribe() {
     return <>
         <Paper className="bottom-banner">
-        <Box display="flex" p="7%" flexDirection="row" alignItems="center">
-            <Box flex="0.5" p="5%" className="email-container">
-                <Typography variant="body2" mb="20px" color="#ffffff" fontWeight="500">
+        <Box display="flex" pt={{xs:"15%", sm:"7%"}} px={{xs:"2%", sm:"7%"}}flexDirection={{xs:"column", sm:"column", md:"row"}} alignItems="center">
+            <Box flex="0.5" p={{xs:"3%", sm:"5%"}} className="email-container">
+                <Typography variant="body2" mb={{xs:"10px", sm:"20px"}} color="#ffffff" fontWeight="500">
                     JOIN WITH OUR COMMUNITY
                 </Typography>
-                <Typography variant="h4" mb="20px" fontSize="30px" fontWeight="800" color="#ffffff">
+                <Typography variant="h4" mb={{xs:"10px", sm:"20px"}} fontSize={{xs:"25px", sm:"30px"}} fontWeight="800" color="#ffffff">
                 Set your social media growth on autopilot.
                 </Typography>
                 <Box display="flex" flexDirection="row">

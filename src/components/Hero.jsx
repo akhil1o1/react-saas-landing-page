@@ -6,9 +6,9 @@ import HeroAvatars from "./HeroAvatars";
 
 
 function Hero() {
-    return <Stack direction={{xs: "column", sm: "row"}} px="7%" pt="20px" pb="50px">
-    <Box flex={0.4} pt="30px">
-        <Typography variant="h1" fontWeight="800" fontSize="66px">
+    return <Stack direction={{sm: "column", md: "row"}} px={{xs:"2%", sm:"7%"}} pt="20px" pb="50px">
+    <Box flex={0.4} pt={{xs:"15px", sm: "30px"}}>
+        <Typography variant="h1" fontWeight="800" fontSize={{xs:"40px", sm:"50px", md :"66px"}}>
         Increase your followers on social media
         </Typography>
         <Typography mt="15px" variant="body1" fontWeight="500">

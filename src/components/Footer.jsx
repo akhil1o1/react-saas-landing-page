@@ -7,8 +7,8 @@ const resources = ["Proposal template", "Tutorial", "Invoices", "Freebies"];
 
 
 function Footer() {
-    return<Box px="7%" className="footer" color="#ffffff">
-        <Stack direction="row" py="4%">
+    return<Box px={{xs:"2%", sm:"7%"}} className="footer" color="#ffffff">
+        <Stack textAlign={{xs:"center", sm:"left"}} direction={{xs:"column", sm:"row"}} py={{xs:"7%", sm:"4%"}} spacing={{xs:3}}>
         {/* left section */}
             <Box flex="0.5" boxSizing="border-box">
                 <Typography variant="h6" fontWeight="500" mb="20px">
@@ -20,8 +20,8 @@ function Footer() {
             </Box>
         {/* right section */}
         {/* first column */}
-            <Stack flex="0.16" gap="12px"> 
-            <Typography varaint="body1">
+            <Stack flex="0.16" gap={{sx:"9px", sm:"12px"}}> 
+            <Typography varaint="body1" fontWeight="500">
                 Company
             </Typography>
             {
@@ -33,8 +33,8 @@ function Footer() {
             }
             </Stack>
             {/* second column */}
-            <Stack flex="0.16" gap="12px"> 
-            <Typography varaint="body1">
+            <Stack flex="0.16" gap={{sx:"9px", sm:"12px"}}> 
+            <Typography varaint="body1" fontWeight="500">
                 Product
             </Typography>
             {
@@ -46,8 +46,8 @@ function Footer() {
             }
             </Stack>
             {/* third column */}
-            <Stack flex="0.16" gap="12px"> 
-            <Typography varaint="body1">
+            <Stack flex="0.16" gap={{sx:"9px", sm:"12px"}}> 
+            <Typography varaint="body1" fontWeight="500">
                 Resources
             </Typography>
             {

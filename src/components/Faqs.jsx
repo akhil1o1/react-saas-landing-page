@@ -24,12 +24,12 @@ const faqsData = [
 ];
 
 function Faqs() {
-    return <Stack px="7%" direction="row" py="50px">
-        <Box flex="0.5" paddingRight="6%">
-            <Typography variant="h2" fontWeight="800" fontSize="54px" mb="35px">
+    return <Stack px={{xs:"2%", sm:"7%"}} direction={{xs:"column", sm:"row"}} py={{xs:"25px", sm:"40px", md:"50px"}}>
+        <Box flex="0.5" paddingRight={{xs:"0%", sm:"3%", md:"6%"}}>
+            <Typography variant="h2" fontWeight="800" fontSize={{xs:"34px", sm:"44px", md:"54px"}} mb={{xs:"15px", sm:"25px", md:"35px"}}>
             Any questions? <br/> We got you.
             </Typography>
-            <Typography variant="body1" fontWeight="500" mb="25px">
+            <Typography variant="body1" fontWeight="500" mb={{xs:"12px", sm:"18px", md:"25px"}}>
             Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
             </Typography>
             <Button variant="text" endIcon={<ArrowRightAltIcon/>}><Typography fontWeight="800">More Faqs</Typography></Button>
@@ -37,7 +37,7 @@ function Faqs() {
         <Box flex="0.5">
         {
             faqsData.map((data)=> (
-        <Accordion sx={{boxShadow: "none", my:"20px"}}>
+        <Accordion sx={{boxShadow: "none", my:{xs:"10px", sm:"20px"}}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"

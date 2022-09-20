@@ -29,11 +29,11 @@ const aboutDetails = [
 ]
 
 function About() {
-    return <Box px="7%" pt="25px" pb="40px">
-        <Typography variant="h3" fontSize="40px" fontWeight="800" width="50%">
+    return <Box px={{xs:"2%", sm:"7%"}} pt="25px" pb="40px">
+        <Typography variant="h3" fontSize={{xs:"25px", sm:"32px", md:"40px"}} fontWeight="800" width={{sm:"100%", md :"50%"}}>
         One plateform to increase followers on all social media.
         </Typography>
-        <Stack py="45px" direction="row" spacing={5}>
+        <Stack py="45px" direction={{xs:"column", sm:"column", md:"row"}} spacing={{xs:3, sm:4, md:5}}>
             {
                 aboutDetails.map((detail)=> (
                     <Stack>
