@@ -1,7 +1,6 @@
 import React from "react";
 import {createTheme, ThemeProvider, Divider} from "@mui/material";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Businesses from "./components/Businesses";
 import Squares from "./components/Squares";
@@ -9,7 +8,11 @@ import About from "./components/About";
 import Features from "./components/Features";
 import Testimonial from "./components/Testimonial";
 import Faqs from "./components/Faqs";
-import Join from "./components/Join";
+import Subscribe from "./components/Subscribe";
+import Footer from "./components/Footer";
+import JoinWaitlist from "./components/JoinWaitlist";
+import Copyright from "./components/Copyright";
+import Topbar from "./components/Topbar";
 
 const theme = createTheme({
   typography: {
@@ -26,7 +29,7 @@ const theme = createTheme({
 function App() {
   return <>
     <ThemeProvider theme={theme}>
-    <Navbar/>
+    <Topbar/>
     <Hero/>
     <Divider orientation="horizontal"/>
     <Businesses/>
@@ -36,7 +39,12 @@ function App() {
     <Features/>
     <Testimonial/>
     <Faqs/>
-    <Join/>
+    <Subscribe/>
+    <JoinWaitlist/>
+    <Divider className="footer-divider" orientation="horizontal"/>
+    <Footer/>
+    <Divider className="footer-divider" orientation="horizontal"/>
+    <Copyright/>
     </ThemeProvider>
   </>;
 }

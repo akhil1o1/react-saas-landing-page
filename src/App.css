@@ -8,17 +8,26 @@ body{
 ::-webkit-scrollbar {
   width: 0px;
 }
-.navbar{
-  display: flex;
-  flex-direction: row;
-  padding-inline: 7%;
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 22px;
+.appbar {
+  color: black !important;
+  padding-inline: 5%;
+  padding-block: 1%;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+}
+.pages {
+  color: black !important;
+  font-weight: 500 !important;
 }
 .nav-link{
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+}
+.nav-link:hover{
+  text-decoration: overline !important;
+  transition: ease-in-out;
 }
 .hero-image{
   max-width: 100%;
@@ -81,4 +90,27 @@ body{
   border-bottom-left-radius: 0px !important;
   background-color:#FE8B75 !important;
   width: 30% !important;
+}
+.join-waitlist{
+  background-color: #1B1C31;
+}
+.footer{
+  background-color: #1B1C31;
+}
+.waitlist-button{
+  background-color:#FE8B75 !important;
+  color: black !important;
+}
+.footer-divider{
+  background-color: #404444 !important;
+}
+.footer-link{
+  text-decoration: none !important;
+}
+.footer-link:hover{
+  text-decoration: underline !important;
+  transition: ease-in-out !important;
+}
+.copyright{
+  background-color: #1B1C31;
 }

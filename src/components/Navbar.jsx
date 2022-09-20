@@ -1,23 +1,25 @@
 import React from "react";
-import {Box, Stack, Typography, Button} from "@mui/material";
+import {Box, Stack, Typography, Button, Link} from "@mui/material";
 
 
 function Navbar() {
     return <Box className="navbar">
         <Typography variant="h6" fontWeight="700" fontSize="20px">
-            AKP
+            Handler
         </Typography>
         <Stack direction="row" spacing={3}>
-            <a href="/" className="nav-link">
+            <Link className="nav-link" href="#" color="inherit" >
                 Products
-            </a><a href="/" className="nav-link">
+            </Link>
+            <Link className="nav-link" href="#" color="inherit" >
                 Packages
-            </a><a href="/" className="nav-link">
+            </Link>
+            <Link className="nav-link" href="#" color="inherit" >
                 Blogs
-            </a>
-            <a href="/" className="nav-link">
-                Testimonials
-            </a>
+            </Link>
+            <Link className="nav-link" href="#" color="inherit" >
+                Testimoinals
+            </Link>
         </Stack>
         <Stack direction="row" spacing={2}>
         <Button variant="outlined">Sign In</Button>

@@ -1,7 +1,7 @@
 import React from "react";
 import {Box, Paper, Typography, TextField, Button} from "@mui/material";
 
-function Join() {
+function Subscribe() {
     return <>
         <Paper className="bottom-banner">
         <Box display="flex" p="7%" flexDirection="row" alignItems="center">
@@ -17,12 +17,9 @@ function Join() {
                 <Button className="subscribe-button" variant="contained">Subscribe</Button>
                 </Box>
             </Box> 
-            <Box flex="0.5">
-
-            </Box>
         </Box>
     </Paper>
     </> 
 }
 
-export default Join;
+export default Subscribe;
