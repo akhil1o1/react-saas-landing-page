@@ -33,11 +33,11 @@ function About() {
         <Typography variant="h3" fontSize={{xs:"25px", sm:"32px", md:"40px"}} fontWeight="800" width={{sm:"100%", md :"50%"}}>
         One plateform to increase followers on all social media.
         </Typography>
-        <Stack py="45px" direction={{xs:"column", sm:"column", md:"row"}} spacing={{xs:3, sm:4, md:5}}>
+        <Stack py="40px" direction={{xs:"column", sm:"column", md:"row"}} spacing={{xs:2, sm:3, md:4}}>
             {
                 aboutDetails.map((detail)=> (
-                    <Stack>
-                        <Box mb="15px">{detail.icon}</Box>
+                    <Stack className="about-info-card" borderRadius="10px" px={{xs:"10px", sm:"10px", md:"15px"}} py={{xs:"15px", sm:"25px"}}>
+                        <Box mb="15px" >{detail.icon}</Box>
                         <Typography mb="10px" variant="h6" fontWeight="600">
                             {detail.title}
                         </Typography>

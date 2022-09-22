@@ -51,6 +51,28 @@ body{
   width: 100px;
   height: auto;
 }
+.client-business-logo:hover{
+  transform: scale(1.4, 1.6);
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.8s, 0.8s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+}
+.about-info-card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.about-info-card:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.1, 1.1);
+  transition: 0.3s all ease-in-out;
+}
+@media screen and (max-width:600px) {
+  .about-info-card:hover{
+    transform: none;
+    transition: none;
+  }
+}
 .feature1-image{
   width: 100%;
   margin-left: 7%;
@@ -69,7 +91,7 @@ body{
   }
 }
 .testimonial-card{
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .quote-icon-container{
   padding: 10px;
@@ -118,6 +140,7 @@ body{
   border-bottom-left-radius: 0px !important;
   background-color:#FE8B75 !important;
   width: 30% !important;
+  box-shadow: none !important;
 }
 .join-waitlist{
   background-color: #1B1C31;

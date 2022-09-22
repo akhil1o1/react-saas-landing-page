@@ -5,7 +5,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 
 function TestimonialCard({quote, personName, designation, image}) {
-    return <Stack m={{xs:"10px", sm:"15px"}} className="testimonial-card" width="300px" textAlign="left" p={{xs:"10px", sm:"20px"}} 
+    return <Stack m={{xs:"5px", sm:"15px"}} className="testimonial-card" width={{xs:"280px", sm:"300px"}} textAlign="left" p={{xs:"10px", sm:"20px"}} 
     borderRadius="5px">
         <Box className="quote-icon-container" mb={{xs:"10px", sm:"20px"}}>
         <FormatQuoteIcon className="quote-icon"/>

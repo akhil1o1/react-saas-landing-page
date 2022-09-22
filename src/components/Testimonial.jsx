@@ -30,7 +30,7 @@ const LeftArrow = () => {
   
 
 function Testimonial() {
-    return <Box px={{xs:"2%", sm:"7.5%"}} py={{xs:"35px", sm:"50px", md:"70px"}} textAlign="center">
+    return <Box px={{xs:"2%", sm:"7.3%"}} py={{xs:"35px", sm:"50px", md:"70px"}} textAlign="center">
         <Typography mb={{xs:"10px", sm:"20px"}} variant="h6" fontSize="18px" fontWeight="800" color="#1976d2">
             TESTIMONIAL
         </Typography>

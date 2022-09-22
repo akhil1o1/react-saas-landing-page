@@ -14,7 +14,7 @@ function Footer() {
                 <Typography variant="h6" fontWeight="500" mb="20px">
                     Handler
                 </Typography>
-                <Typography variant="body2" width="90%">
+                <Typography variant="body2" width={{xs:"100%", sm:"90%"}}>
                     Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all   exercise blessing. Indulgence way everything joy alteration boisterous the    attachment.
                 </Typography>
             </Box>

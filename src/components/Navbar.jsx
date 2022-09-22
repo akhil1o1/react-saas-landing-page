@@ -71,7 +71,7 @@ function Navbar() {
             >
             <Stack mx="10px" spacing={2} sx={{display : {sm: "flex" , md: "none"}}}>
             <Button variant="outlined">Sign In</Button>
-            <Button variant="contained" sx={{boxShadow : "none"}}>Start Free</Button>
+            <Button variant="contained">Start Free</Button>
           </Stack>
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
