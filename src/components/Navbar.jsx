@@ -1,20 +1,29 @@
 import React from "react";
-import {AppBar, Box, Toolbar, Button, IconButton, Typography, Menu, Container, Stack, Link,  MenuItem} from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Button,
+  IconButton,
+  Typography,
+  Menu,
+  Container,
+  Stack,
+  Link,
+  MenuItem,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const pages = ["Products", "Pricing", "Blog", "Testimonial"];
 
-
-
-
 // Appbar component from mui..................................
-function Navbar() { 
+function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -32,10 +41,10 @@ function Navbar() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontWeight: 700,
-              fontSize:"20px",
+              fontSize: "20px",
               color: "inherit",
-              marginRight :"20%",
-              textDecoration: "none"
+              marginRight: "20%",
+              textDecoration: "none",
             }}
           >
             Handler
@@ -56,23 +65,27 @@ function Navbar() {
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: "bottom",
-                horizontal: "left"
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
                 vertical: "top",
-                horizontal: "left"
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "none" },
               }}
             >
-            <Stack mx="10px" spacing={2} sx={{display : {sm: "flex" , md: "none"}}}>
-            <Button variant="outlined">Sign In</Button>
-            <Button variant="contained">Start Free</Button>
-          </Stack>
+              <Stack
+                mx="10px"
+                spacing={2}
+                sx={{ display: { sm: "flex", md: "none" } }}
+              >
+                <Button variant="outlined">Sign In</Button>
+                <Button variant="contained">Start Free</Button>
+              </Stack>
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
@@ -89,27 +102,38 @@ function Navbar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontSize:"25px",
+              fontSize: "25px",
               fontWeight: 800,
-              textDecoration: "none"
+              textDecoration: "none",
             }}
           >
             Handler
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex", gap:"25px" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex", gap: "25px" },
+            }}
+          >
             {pages.map((page) => (
-                <Link className="nav-link" href="#" color="inherit" >
+              <Link className="nav-link" href="#" color="inherit">
                 {page}
-            </Link>
+              </Link>
             ))}
           </Box>
-           <Stack  direction="row" spacing={2} sx={{display : {xs:"none", sm: "none" , md: "flex"}}}>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
+          >
             <Button variant="outlined">Sign In</Button>
-            <Button variant="contained" sx={{boxShadow : "none"}}>Start Free</Button>
+            <Button variant="contained" sx={{ boxShadow: "none" }}>
+              Start Free
+            </Button>
           </Stack>
         </Toolbar>
       </Container>
     </AppBar>
   );
-};
+}
 export default Navbar;
